@@ -1,0 +1,18 @@
+body
+{
+    line-height: 0px;
+}
+.pixel
+{
+    height: 30px;
+    width: 30px;
+    float:left;
+    display: inline-block;
+    background-color: #E2E2E2;
+}
+
+.wrapper
+{
+    height: 600px;
+    width: 600px;
+}
