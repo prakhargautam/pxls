@@ -8,12 +8,11 @@ body
     width: 30px;
     float:left;
     display: inline-block;
-    background-color: #E2E2E2;
+    background-color: #FFF;
 }
 
 .wrapper
 {
     height: 600px;
     width: 600px;
-    border: 1px solid #000;
 }
