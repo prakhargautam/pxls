@@ -10,8 +10,23 @@ $(document).ready(function(){
         clear();
         create(gridVal);
     });
-    
+    $('input[name=erase]').click(function(){
+        erase();
+    });
+    $('input[name=pen]').click(function(){
+        draw();
+    });
+    $('.pixel').click(function(){
+        draw();
+    });
 });
+    
+function erase()
+{
+    $('.pixel').hover(function(){
+    $(this).css('background-color','#E2E2E2');
+    });
+}
 
 function clear()
 {
@@ -43,13 +58,15 @@ function create(size)
     $('body').css('line-width',ppi+'px');
     $('.pixel').css('height',ppi+'px');
     $('.pixel').css('width',ppi+'px');
-    
-    draw();
+
 }
 
 function draw()
 {
-    $('.pixel').mouseover(function(){
+    /*$('.pixel').mouseover(function(){
         $(this).css('background-color','#000');
-    });
+    });*/  
+    $('.pixel').hover(function(){
+            $(this).css('background-color','#000');
+        });
 }
